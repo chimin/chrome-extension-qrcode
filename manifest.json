@@ -1,6 +1,6 @@
 {
     "name": "Current page URL to QR code",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Generate QR code from current URL",
     "manifest_version": 2,
     "permissions": [
