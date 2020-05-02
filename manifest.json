@@ -1,0 +1,25 @@
+{
+    "name": "Current page URL to QR code",
+    "version": "1.0",
+    "description": "Generate QR code from current URL",
+    "manifest_version": 2,
+    "permissions": [
+        "declarativeContent",
+        "tabs"
+    ],
+    "background": {
+        "scripts": [
+            "dist/background.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "dist/popup.html",
+        "default_icons": {
+            "128": "images/qr-code.png"
+        }
+    },
+    "icons": {
+        "128": "images/qr-code.png"
+    }
+}
