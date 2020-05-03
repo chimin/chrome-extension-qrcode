@@ -6,6 +6,6 @@ chrome.tabs.query({
 }, tabs => {
     let tab = tabs.pop();
     if (tab) {
-        QRCode.toCanvas(document.getElementById('canvas'), tab.url);
+        QRCode.toCanvas(document.getElementById('canvas'), tab.url, { width: 450 });
     }
 });
