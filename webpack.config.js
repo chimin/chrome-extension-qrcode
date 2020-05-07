@@ -16,5 +16,13 @@ module.exports = {
             template: 'src/popup.html',
             chunks: ['popup'],
         })
-    ]
+    ],
+    resolve: {
+        extensions: [".ts", ".tsx", ".js"]
+    },
+    module: {
+        rules: [
+            { test: /\.tsx?$/, loader: "ts-loader" }
+        ]
+    }
 };
